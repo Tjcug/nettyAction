@@ -1,0 +1,49 @@
+package com.basic.netty.thirdSolution;
+
+import io.netty.bootstrap.Bootstrap;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
+import io.netty.handler.codec.string.StringDecoder;
+
+/**
+ * locate com.basic.netty.secondSolution
+ * Created by mastertj on 2018/4/10.
+ */
+public class Clinet {
+    public static void main(String[] args) throws InterruptedException {
+        EventLoopGroup cgroup=new NioEventLoopGroup();  //一个是进行网络通信的（网络读写）
+        Bootstrap bootstrap=new Bootstrap();
+        bootstrap.group(cgroup);
+        bootstrap.channel(NioSocketChannel.class);
+        bootstrap.handler(new ChannelInitializer<SocketChannel>() {
+            @Override
+            protected void initChannel(SocketChannel ch) throws Exception {
+
+                ch.pipeline().addLast(new FixedLengthFrameDecoder(14));//3.在这里配置具体的数据接受方法
+                ch.pipeline().addLast(new StringDecoder());
+                ch.pipeline().addLast(new ClientHandler());
+            }
+        });
+
+        ChannelFuture future = bootstrap.connect("localhost", 1234).sync();
+
+        System.out.println("连接完毕--------");
+        future.channel().writeAndFlush(Unpooled.copiedBuffer("hello! Server1".getBytes()));
+        Thread.sleep(1000);
+        future.channel().writeAndFlush(Unpooled.copiedBuffer("hello! Server2".getBytes()));
+        Thread.sleep(1000);
+        future.channel().writeAndFlush(Unpooled.copiedBuffer("hello! Server3".getBytes()));
+        Thread.sleep(1000);
+        future.channel().writeAndFlush(Unpooled.copiedBuffer("hello! Server4".getBytes()));
+        Thread.sleep(1000);
+        future.channel().writeAndFlush(Unpooled.copiedBuffer("hello! Server5".getBytes()));
+
+        future.channel().closeFuture().sync();
+    }
+}

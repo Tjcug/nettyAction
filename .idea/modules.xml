@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basicComm/basicComm.iml" filepath="$PROJECT_DIR$/basicComm/basicComm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettyAction.iml" filepath="$PROJECT_DIR$/nettyAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamDataProcess/streamDataProcess.iml" filepath="$PROJECT_DIR$/streamDataProcess/streamDataProcess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timeServer/timeServer.iml" filepath="$PROJECT_DIR$/timeServer/timeServer.iml" />
+    </modules>
+  </component>
+</project>
