@@ -14,6 +14,8 @@
       <module>streamDataProcess</module>
       <module>dataComm</module>
       <module>heartbeatDetection</module>
+      <module>fileUploadServer</module>
+      <module>httpHelloWorldServer</module>
   </modules>
 
   <name>nettyAction</name>

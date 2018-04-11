@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basicComm" />
         <module name="dataComm" />
+        <module name="fileUploadServer" />
         <module name="heartbeatDetection" />
+        <module name="httpHelloWorldServer" />
         <module name="streamDataProcess" />
         <module name="timeServer" />
       </profile>
@@ -16,7 +18,9 @@
     <bytecodeTargetLevel>
       <module name="basicComm" target="1.8" />
       <module name="dataComm" target="1.8" />
+      <module name="fileUploadServer" target="1.8" />
       <module name="heartbeatDetection" target="1.8" />
+      <module name="httpHelloWorldServer" target="1.8" />
       <module name="nettyAction" target="1.8" />
       <module name="streamDataProcess" target="1.8" />
       <module name="timeServer" target="1.8" />
