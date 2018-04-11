@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/basicComm/basicComm.iml" filepath="$PROJECT_DIR$/basicComm/basicComm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataComm/dataComm.iml" filepath="$PROJECT_DIR$/dataComm/dataComm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heartbeatDetection/heartbeatDetection.iml" filepath="$PROJECT_DIR$/heartbeatDetection/heartbeatDetection.iml" />
       <module fileurl="file://$PROJECT_DIR$/nettyAction.iml" filepath="$PROJECT_DIR$/nettyAction.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamDataProcess/streamDataProcess.iml" filepath="$PROJECT_DIR$/streamDataProcess/streamDataProcess.iml" />
       <module fileurl="file://$PROJECT_DIR$/timeServer/timeServer.iml" filepath="$PROJECT_DIR$/timeServer/timeServer.iml" />

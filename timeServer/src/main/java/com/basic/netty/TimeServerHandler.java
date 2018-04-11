@@ -24,6 +24,7 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
                 ctx.close();
             }
         });
+//        f.addListener(ChannelFutureListener.CLOSE);
     }
 
     @Override

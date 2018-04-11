@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basicComm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dataComm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heartbeatDetection" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/streamDataProcess" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timeServer" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
