@@ -14,6 +14,8 @@ import java.io.UnsupportedEncodingException;
  */
 public class ServerHandler extends ChannelHandlerAdapter {
 
+    private int index=1;
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         try {
@@ -24,11 +26,12 @@ public class ServerHandler extends ChannelHandlerAdapter {
             System.out.println("服务器收到消息: "+reuslt);
 
             //服务器给客户端响应
-            String response="Hi Client";
+            String response="Hi Client " + index;
             //Handler中有写操作 会自动释放ByteBuf对象
             ChannelFuture future = ctx.writeAndFlush(Unpooled.copiedBuffer(response.getBytes()));
 
 //            future.addListener(ChannelFutureListener.CLOSE);
+            index++;
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
