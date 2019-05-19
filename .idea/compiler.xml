@@ -11,6 +11,14 @@
         <module name="fileUploadServer" />
         <module name="heartbeatDetection" />
         <module name="httpHelloWorldServer" />
+        <module name="netty-basicComm" />
+        <module name="netty-dataComm" />
+        <module name="netty-fileUploadServer" />
+        <module name="netty-guide" />
+        <module name="netty-heartbeatDetection" />
+        <module name="netty-httpHelloWorldServer" />
+        <module name="netty-streamDataProcess" />
+        <module name="netty-timeServer" />
         <module name="streamDataProcess" />
         <module name="timeServer" />
       </profile>
@@ -21,6 +29,14 @@
       <module name="fileUploadServer" target="1.8" />
       <module name="heartbeatDetection" target="1.8" />
       <module name="httpHelloWorldServer" target="1.8" />
+      <module name="netty-basicComm" target="1.8" />
+      <module name="netty-dataComm" target="1.8" />
+      <module name="netty-fileUploadServer" target="1.8" />
+      <module name="netty-guide" target="1.7" />
+      <module name="netty-heartbeatDetection" target="1.8" />
+      <module name="netty-httpHelloWorldServer" target="1.8" />
+      <module name="netty-streamDataProcess" target="1.8" />
+      <module name="netty-timeServer" target="1.8" />
       <module name="nettyAction" target="1.8" />
       <module name="streamDataProcess" target="1.8" />
       <module name="timeServer" target="1.8" />
