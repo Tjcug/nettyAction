@@ -80,7 +80,7 @@ Ant build file for JiBX data binding code to schema starter example.
     <java classpathref="classpath" fork= "true" failonerror="true" classname="org.jibx.binding.generator.BindGen">
       <arg value="-s"/>
       <arg value="${basedir}/src/com/phei/netty/protocol/http/xml/pojo"/>
-      <arg value="com.phei.netty.protocol.http.xml.pojo.Order"/>
+      <arg value="com.basic.netty.protocol.http.xml.pojo.Order"/>
     </java>  
   </target>
   
